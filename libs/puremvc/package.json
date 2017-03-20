@@ -1,0 +1,16 @@
+{
+	"name": "egret",
+	"version": "4.0.3",
+	"modules": [
+		{
+			"name": "puremvc",
+			"description": "puremvc",
+			"files": [
+				"puremvc-typescript-multicore-1.1.d.ts",
+				"puremvc-typescript-multicore-1.1-min.js",
+				"puremvc-typescript-multicore-1.1.js"
+			],
+			"root": "src"
+		}
+	]
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="game" width="520" height="650" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="source_json.menu" y="0" anchorOffsetY="0" left="0" right="0" height="121" width="504"/>
+	<e:Button id="btn_restart" label="重试" x="422.66" y="77.85" anchorOffsetX="0" width="88.66" anchorOffsetY="0" height="38.65">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="source_json.buttonUp" source.down="source_json.buttonDown"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="lb_score" text="0" x="324.34" y="35.82" textAlign="center" width="80" height="30" size="30"/>
+	<e:Label id="lb_best" text="0" x="429.31" y="35.82" textAlign="center" width="80" height="30" size="30" textColor="0xfafc05"/>
+
+	<e:Group id="gp_tile" width="520" height="520" y="128" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image id="bg" source="source_json.background" x="0" y="0" width="100" height="100" fillMode="scale" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="gp_num" width="520" height="520" y="128" anchorOffsetX="0" anchorOffsetY="0" x="0">
+	</e:Group>
+	<e:Image id="img_over" width="520" height="520" x="0" y="128" anchorOffsetX="0" anchorOffsetY="0" source="source_json.frontground" scale9Grid="3,3,94,94" alpha="0.5" visible="false"/>
+	<e:Image id="img_failed" width="236" height="38" x="142" y="228" source="source_json.result_failed" visible="false"/>
+	<e:Image id="img_success" source="source_json.result_sucess" x="144" y="228" visible="false"/>
+	<e:Button id="btn_restart1" label="降低难度" x="194" y="412" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="source_json.buttonUp" source.down="source_json.buttonDown"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_restart2" label="提高难度" x="196" y="413" visible="false">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="source_json.buttonUp" source.down="source_json.buttonDown"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_more" label="更多游戏" x="199" y="559" visible="false">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="source_json.buttonUp" source.down="source_json.buttonDown"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="lb_title" text="2048" x="25.5" y="9.85" anchorOffsetX="0" width="185" anchorOffsetY="0" height="68" size="80" textColor="0xf49f33" bold="true"/>
+	<e:Label id="lb_explain" text="合并数字直到出现2048" x="25.5" y="86.5" anchorOffsetX="0" width="347" textColor="0xe29191" size="25"/>
+	<e:Image id="img_win" source="win_jpg" x="60" y="198" alpha="1" visible="false"/>
+	<e:Image id="img_bad" source="bad_jpg" x="77" y="213" alpha="1" visible="false"/>
+
+</e:Skin>
